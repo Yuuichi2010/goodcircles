@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Vòng Cổ "Moira" – Tượng Trưng Cho Định Mệnh</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Reset cơ bản */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background: linear-gradient(to bottom, #f7f7f7, #f3e5f5);
+      color: #333;
+    }
+    header {
+      background: linear-gradient(to right, #8e44ad, #6c3483);
+      text-align: center;
+      padding: 60px 20px 30px;
+    }
+    header h1 {
+      font-size: 2.8rem;
+      color: #ffffff;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #ffeaa7;
+    }
+    /* Breadcrumb */
+    .breadcrumb {
+      margin: 20px auto;
+      text-align: center;
+      font-size: 1.5rem;
+    }
+    .breadcrumb a {
+      color: #8e44ad;
+      text-decoration: none;
+    }
+    .breadcrumb a:hover {
+      text-decoration: underline;
+    }
+    /* Container sản phẩm */
+    .product-container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      justify-content: center;
+    }
+    /* Hình ảnh sản phẩm */
+    .product-image {
+      flex: 1 1 450px;
+      max-width: 500px;
+    }
+    .product-image img {
+      width: 100%;
+      border-radius: 16px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    }
+    /* Thông tin sản phẩm */
+    .product-details {
+      flex: 1 1 500px;
+    }
+    .product-details h2 {
+      font-size: 2rem;
+      color: #34495e;
+      margin-bottom: 8px;
+    }
+    .product-details h3 {
+      font-size: 1rem;
+      font-style: italic;
+      color: #555;
+      margin-bottom: 12px;
+    }
+    .product-details p {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      margin-bottom: 16px;
+    }
+    /* Giá sản phẩm */
+    .price-section {
+      margin-bottom: 16px;
+    }
+    .discount-price {
+      color: #8e44ad;
+      font-size: 1.6rem;
+      font-weight: bold;
+      animation: glow 2.5s ease-in-out infinite;
+      display: inline-block;
+    }
+    .old-price {
+      font-size: 1.2rem;
+      color: #999;
+      text-decoration: line-through;
+      margin-left: 10px;
+    }
+    /* Hiệu ứng glow cho giá khuyến mãi */
+    @keyframes glow {
+      0% { text-shadow: 0 0 5px #bb8fc4, 0 0 10px #8e44ad; transform: scale(1); }
+      50% { text-shadow: 0 0 10px #bb8fc4, 0 0 20px #8e44ad; transform: scale(1.05); }
+      100% { text-shadow: 0 0 5px #bb8fc4, 0 0 10px #8e44ad; transform: scale(1); }
+    }
+    .promotion-note {
+      font-style: italic;
+      color: #6c3483;
+      margin-top: 8px;
+      font-size: 0.95rem;
+    }
+    /* Hộp thông tin nổi bật */
+    .highlight {
+      background-color: #f3e5f5;
+      padding: 14px;
+      border-left: 5px solid #8e44ad;
+      border-radius: 8px;
+      margin: 20px 0;
+    }
+    .highlight ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+    /* Nút quay lại */
+    .back-link {
+      display: block;
+      text-align: center;
+      margin: 40px auto;
+      padding: 12px 28px;
+      background-color: #8e44ad;
+      color: white;
+      text-decoration: none;
+      font-size: 1.1rem;
+      font-weight: bold;
+      border-radius: 8px;
+      width: fit-content;
+      transition: background-color 0.3s ease;
+    }
+    .back-link:hover {
+      background-color: #6c3483;
+    }
+    /* Footer */
+    footer {
+      text-align: center;
+      background-color: #f3e5f5;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #555;
+    }
+    /* Responsive */
+    @media (max-width: 768px) {
+      .product-container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .product-image,
+      .product-details {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🌺𝑽ò𝒏𝒈 𝑪ổ "𝑴𝒐𝒊𝒓𝒂" – 𝑻ượ𝒏𝒈 𝑻𝒓ư𝒏𝒈 𝑪𝒉𝒐 Đị𝒏𝒉 𝑴ệ𝒏𝒉🌺</h1>
+    <p>Thanh lịch, quý phái và đầy huyền bí</p>
+  </header>
+
+  <nav class="breadcrumb">
+    <a href="../index.html">Trang Chủ</a> &gt;
+    <a href="../vongco.html">Vòng Cổ</a> &gt;
+    <span>Moira</span>
+  </nav>
+
+  <div class="product-container">
+    <div class="product-image">
+      <img src="vongcoimages/vongco4.jpg" alt="Vòng Cổ Moira">
+    </div>
+    <div class="product-details">
+      <h2>✨𝑴𝒐𝒊𝒓𝒂 𝑵𝒆𝒄𝒌𝒍𝒂𝒄𝒆✨</h2>
+      <h3>Biểu Tượng Của Định Mệnh</h3>
+      <div class="price-section">
+        <span class="discount-price">"Giá khuyến mãi: 43.000đ"</span>
+        <span class="old-price">"48.000đ"</span>
+      </div>
+      <p class="promotion-note">🌟 Ưu đãi đặc biệt – Số lượng giới hạn!</p>
+      <div class="highlight">
+        <strong>Đặc điểm nổi bật:</strong>
+        <ul>
+          <li>Ngọc trai tự nhiên: Quý phái, sang trọng.</li>
+          <li>Charm vỏ sò: Tạo cảm giác mềm mại và nữ tính.</li>
+        </ul>
+        <strong>Ý nghĩa:</strong>
+        <ul>
+          <li>Moira – Biểu tượng của định mệnh và sự kết nối.</li>
+          <li>Vòng cổ mang lại sự tự tin và sức hút cho người đeo.</li>
+        </ul>
+      </div>
+      <p>
+        “𝑴𝒐𝒊𝒓𝒂 𝑵𝒆𝒄𝒌𝒍𝒂𝒄𝒆” là sự kết hợp hoàn hảo giữa vẻ đẹp cổ điển và huyền bí, phù hợp làm quà tặng cho những người yêu sự thanh lịch.
+      </p>
+    </div>
+  </div>
+
+  <div style="text-align: center;">
+    <a href="../vongco.html" class="back-link">&larr; Quay lại danh sách vòng cổ</a>
+  </div>
+
+  <footer>
+    &copy; 2025 Moira – Sự quý phái và sang trọng vượt thời gian ✨
+  </footer>
+
+</body>
+</html>

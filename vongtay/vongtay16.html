@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Whisper of Colors – Bộ sưu tập vòng tay sắc màu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Reset cơ bản */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background: linear-gradient(to bottom, #ffffff, #f7f7f7);
+      color: #333;
+    }
+    header {
+      background: linear-gradient(to right, #9b59b6, #8e44ad);
+      text-align: center;
+      padding: 60px 20px 30px;
+    }
+    header h1 {
+      font-size: 2.8rem;
+      color: #ffffff;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #f1c40f;
+    }
+    /* Breadcrumb */
+    .breadcrumb {
+      margin: 20px auto;
+      text-align: center;
+      font-size: 1.5rem;
+    }
+    .breadcrumb a {
+      color: #9b59b6;
+      text-decoration: none;
+    }
+    .breadcrumb a:hover {
+      text-decoration: underline;
+    }
+    /* Container sản phẩm */
+    .product-container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      justify-content: center;
+    }
+    /* Hình ảnh sản phẩm */
+    .product-image {
+      flex: 1 1 450px;
+      max-width: 500px;
+    }
+    .product-image img {
+      width: 100%;
+      border-radius: 16px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    }
+    /* Thông tin sản phẩm */
+    .product-info {
+      flex: 1 1 500px;
+    }
+    .product-info h2 {
+      font-size: 2rem;
+      color: #34495e;
+      margin-bottom: 8px;
+    }
+    .product-info h3 {
+      font-size: 1rem;
+      font-style: italic;
+      color: #555;
+      margin-bottom: 12px;
+    }
+    .product-info p {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      margin-bottom: 16px;
+    }
+    /* Giá sản phẩm */
+    .price-section {
+      margin-bottom: 16px;
+    }
+    .discount-price {
+      color: #9b59b6;
+      font-size: 1.6rem;
+      font-weight: bold;
+      animation: glow 2.5s ease-in-out infinite;
+      display: inline-block;
+    }
+    .old-price {
+      font-size: 1.2rem;
+      color: #999;
+      text-decoration: line-through;
+      margin-left: 10px;
+    }
+    /* Hiệu ứng glow cho giá khuyến mãi */
+    @keyframes glow {
+      0% { text-shadow: 0 0 5px #d7bde2, 0 0 10px #9b59b6; transform: scale(1); }
+      50% { text-shadow: 0 0 10px #d7bde2, 0 0 20px #9b59b6; transform: scale(1.05); }
+      100% { text-shadow: 0 0 5px #d7bde2, 0 0 10px #9b59b6; transform: scale(1); }
+    }
+    .promotion-note {
+      font-style: italic;
+      color: #8e44ad;
+      margin-top: 8px;
+      font-size: 0.95rem;
+    }
+    /* Hộp thông tin nổi bật */
+    .highlight {
+      background-color: #ecf0f1;
+      padding: 14px;
+      border-left: 5px solid #3498db;
+      border-radius: 8px;
+      margin: 20px 0;
+    }
+    .highlight ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+    /* Nút quay lại */
+    .back-link {
+      display: block;
+      text-align: center;
+      margin: 40px auto;
+      padding: 12px 28px;
+      background-color: #9b59b6;
+      color: white;
+      text-decoration: none;
+      font-size: 1.1rem;
+      font-weight: bold;
+      border-radius: 8px;
+      width: fit-content;
+      transition: background-color 0.3s ease;
+    }
+    .back-link:hover {
+      background-color: #8e44ad;
+    }
+    /* Footer */
+    footer {
+      text-align: center;
+      background-color: #ecf0f1;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #555;
+    }
+    /* Responsive */
+    @media (max-width: 768px) {
+      .product-container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .product-image,
+      .product-info {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>✨𝑾𝒉𝒊𝒔𝒑𝒆𝒓 𝒐𝒇 𝑪𝒐𝒍𝒐𝒓𝒔 – 𝑩ộ 𝒔ư𝒖 𝒕ậ𝒑 𝒗ò𝒏𝒈 𝒕𝒂𝒚 𝒔ắ𝒄 𝒎à𝒖✨</h1>
+    <p>Nhẹ nhàng như những lời thì thầm, mỗi chiếc vòng tay là một câu chuyện riêng</p>
+  </header>
+  <nav class="breadcrumb">
+    <a href="../index.html">Trang Chủ</a> &gt;
+    <a href="../vongtay.html">Vòng Tay</a> &gt;
+    <span> Moonlight Whisper</span>
+  </nav>
+
+  <div class="product-container">
+    <div class="product-image">
+      <img src="vongtayimages/vongtay16.png" alt="Whisper of Colors Bracelet">
+    </div>
+    <div class="product-info">
+      <h2>🌙𝑾𝒉𝒊𝒔𝒑𝒆𝒓 𝒐𝒇 𝑪𝒐𝒍𝒐𝒓𝒔🌙</h2>
+      <h3>Ánh Trăng Dịu Dàng</h3>
+      <div class="price-section">
+        <span class="discount-price">"Giá khuyến mãi: 42.000đ"</span>
+        <span class="old-price">"50.000đ"</span>
+      </div>
+      <p class="promotion-note">✨ Ưu đãi đặc biệt – Số lượng có hạn!</p>
+      <div class="highlight">
+        <strong>Màu sắc:</strong> Trắng sữa & xanh ngọc nhẹ nhàng, kết hợp pha lê lấp lánh<br>
+        <strong>Ý nghĩa:</strong> Tượng trưng cho sự bình an, trí tuệ và may mắn<br>
+        <strong>Phù hợp:</strong> Những ai yêu thích sự thanh lịch, nhẹ nhàng như ánh trăng đêm.
+      </div>
+
+      <h2>🌸 Rose Blush</h2>
+      <h3>Hơi Thở Của Sắc Hồng</h3>
+      <div class="price-section">
+        <span class="discount-price">"Giá khuyến mãi: 42.000đ"</span>
+        <span class="old-price">"50.000đ"</span>
+      </div>
+      <p class="promotion-note">✨ Ưu đãi đặc biệt – Đừng bỏ lỡ!</p>
+      <div class="highlight">
+        <strong>Màu sắc:</strong> Hồng pastel ngọt ngào, điểm xuyết pha lê trong suốt<br>
+        <strong>Ý nghĩa:</strong> Biểu tượng của tình yêu, sự nữ tính và dịu dàng<br>
+        <strong>Phù hợp:</strong> Những ai yêu phong cách lãng mạn và mềm mại.
+      </div>
+
+      <h2>🍃 Emerald Whisper</h2>
+      <h3>Thì Thầm Của Thiên Nhiên</h3>
+      <div class="price-section">
+        <span class="discount-price">"Giá khuyến mãi: 42.000đ"</span>
+        <span class="old-price">"50.000đ"</span>
+      </div>
+      <p class="promotion-note">✨ Ưu đãi đặc biệt – Số lượng giới hạn!</p>
+      <div class="highlight">
+        <strong>Màu sắc:</strong> Xanh lá trong trẻo, kết hợp charm bạc thanh lịch<br>
+        <strong>Ý nghĩa:</strong> Mang đến sự tươi mát, cân bằng năng lượng và may mắn<br>
+        <strong>Phù hợp:</strong> Những ai yêu thiên nhiên và sự thanh tịnh.
+      </div>
+    </div>
+  </div>
+  
+  <div style="text-align: center;">
+    <a href="../vongtay.html" class="back-link">&larr; Quay lại danh sách vòng tay</a>
+  </div>>
+
+
+  <footer>
+    &copy; 2025 Whisper of Colors – Câu chuyện sắc màu trong từng chiếc vòng tay ✨
+  </footer>
+
+</body>
+</html>

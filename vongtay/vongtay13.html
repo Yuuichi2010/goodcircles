@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Astra Bracelet – Vẻ đẹp lấp lánh như sao trời</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Reset cơ bản */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background: linear-gradient(to bottom, #fff5f6, #f8eff1);
+      color: #333;
+    }
+    header {
+      background: linear-gradient(to right, #34495e, #2c3e50);
+      text-align: center;
+      padding: 60px 20px 30px;
+    }
+    header h1 {
+      font-size: 2.8rem;
+      color: #ecf0f1;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #bdc3c7;
+    }
+    /* Breadcrumb */
+    .breadcrumb {
+      margin: 20px auto;
+      text-align: center;
+      font-size: 1.5rem;
+    }
+    .breadcrumb a {
+      color: #2980b9;
+      text-decoration: none;
+    }
+    .breadcrumb a:hover {
+      text-decoration: underline;
+    }
+    /* Container sản phẩm */
+    .product-container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      justify-content: center;
+    }
+    /* Hình ảnh sản phẩm */
+    .product-image {
+      flex: 1 1 450px;
+      max-width: 500px;
+    }
+    .product-image img {
+      width: 100%;
+      border-radius: 16px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    }
+    /* Thông tin sản phẩm */
+    .product-details {
+      flex: 1 1 500px;
+    }
+    .product-details h2 {
+      font-size: 2rem;
+      color: #34495e;
+      margin-bottom: 8px;
+    }
+    .product-details h3 {
+      font-size: 1rem;
+      font-style: italic;
+      color: #555;
+      margin-bottom: 12px;
+    }
+    .product-details p {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      margin-bottom: 16px;
+    }
+    /* Giá sản phẩm */
+    .price-section {
+      margin-bottom: 16px;
+    }
+    .discount-price {
+      color: #2980b9;
+      font-size: 1.6rem;
+      font-weight: bold;
+      animation: glow 2.5s ease-in-out infinite;
+      display: inline-block;
+    }
+    .old-price {
+      font-size: 1.2rem;
+      color: #999;
+      text-decoration: line-through;
+      margin-left: 10px;
+    }
+    /* Hiệu ứng glow cho giá khuyến mãi */
+    @keyframes glow {
+      0% { text-shadow: 0 0 5px #3498db, 0 0 10px #2980b9; transform: scale(1); }
+      50% { text-shadow: 0 0 10px #3498db, 0 0 20px #2980b9; transform: scale(1.05); }
+      100% { text-shadow: 0 0 5px #3498db, 0 0 10px #2980b9; transform: scale(1); }
+    }
+    .promotion-note {
+      font-style: italic;
+      color: #2980b9;
+      margin-top: 8px;
+      font-size: 0.95rem;
+    }
+    /* Hộp thông tin nổi bật */
+    .highlight {
+      background-color: #f8fafe;
+      padding: 14px;
+      border-left: 5px solid #2980b9;
+      border-radius: 8px;
+      margin: 20px 0;
+    }
+    .highlight ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+    /* Nút quay lại */
+    .back-link {
+      display: block;
+      text-align: center;
+      margin: 40px auto;
+      padding: 12px 28px;
+      background-color: #3498db;
+      color: white;
+      text-decoration: none;
+      font-size: 1.1rem;
+      font-weight: bold;
+      border-radius: 8px;
+      width: fit-content;
+      transition: background-color 0.3s ease;
+    }
+    .back-link:hover {
+      background-color: #2980b9;
+    }
+    /* Footer */
+    footer {
+      text-align: center;
+      background-color: #f8fafe;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #555;
+    }
+    /* Responsive */
+    @media (max-width: 768px) {
+      .product-container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .product-image,
+      .product-details {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🌟𝑨𝒔𝒕𝒓𝒂 𝑩𝒓𝒂𝒄𝒆𝒍𝒆𝒕 – 𝑽ẻ đẹ𝒑 𝒍ấ𝒑 𝒍á𝒏𝒉 𝒏𝒉ư 𝒔𝒂𝒐 𝒕𝒓ờ𝒊🌟</h1>
+    <p>Chiếc vòng tay mang phong cách tinh tế và độc đáo.</p>
+  </header>
+  <nav class="breadcrumb">
+    <a href="../index.html">Trang Chủ</a> &gt;
+    <a href="../vongtay.html">Vòng Tay</a> &gt;
+    <span>Astra Bracelet</span>
+  </nav>
+
+  <div class="product-container">
+    <div class="product-image">
+      <img src="vongtayimages/vongtay13.png" alt="Astra Bracelet">
+    </div>
+    <div class="product-details">
+      <h2>✨𝑨𝒔𝒕𝒓𝒂 𝑩𝒓𝒂𝒄𝒆𝒍𝒆𝒕✨</h2>
+      <h3>Vẻ đẹp độc đáo từ những ngôi sao</h3>
+
+      <div class="price-section">
+        <span class="discount-price">"Giá khuyến mãi: 47.000đ"</span>
+        <span class="old-price">"50.000đ"</span>
+      </div>
+      <p class="promotion-note">🎁 Ưu đãi hấp dẫn – Đừng bỏ lỡ cơ hội!</p>
+      <div class="highlight">
+        <strong>Màu sắc ý nghĩa:</strong>
+        <ul>
+          <li>🌸 Hồng: Tình yêu, sự dịu dàng.</li>
+          <li>🤍 Trắng: Bình yên, thanh khiết.</li>
+          <li>🩵 Xanh dương: Sự bình tĩnh, trí tuệ.</li>
+          <li>💜 Tím: Trực giác, tâm linh.</li>
+          <li>💚 Xanh lục: Sự phát triển, sức khỏe, và năng lượng tự nhiên.</li>
+        </ul>
+
+        <strong>Chất liệu nổi bật:</strong>
+        <ul>
+          <li>Hạt ngọc trai tự nhiên: Tạo nên vẻ đẹp tự nhiên và độc đáo.</li>
+          <li>Pha lê Swarovski: Tỏa sáng lấp lánh, mang lại sự sang trọng.</li>
+          <li>Móc nối hợp kim kẽm: Chắc chắn, không gỉ.</li>
+        </ul>
+        <strong>Ý nghĩa:</strong> Tượng trưng cho sự tự do và khám phá, giúp bạn tỏa sáng trong mọi khoảnh khắc.<br>
+      </div>
+      <p>
+        Chiếc vòng tay <strong>“𝑨𝒔𝒕𝒓𝒂 𝑩𝒓𝒂𝒄𝒆𝒍𝒆𝒕”</strong> được chế tác tinh xảo với sự kết hợp giữa các hạt ngọc trai và pha lê trong suốt, mang lại vẻ đẹp sang trọng và huyền bí như những vì sao trên bầu trời.
+      </p>
+    </div>
+  </div>
+
+  <div style="text-align: center;">
+    <a href="../vongtay.html" class="back-link">&larr; Quay lại danh sách vòng tay</a>
+  </div>
+
+  <footer>
+    &copy; 2025 Astra Bracelet – Đẳng cấp và phong cách ✨
+  </footer>
+
+</body>
+</html>

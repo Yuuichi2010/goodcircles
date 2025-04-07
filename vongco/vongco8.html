@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Blossom – Biểu Tượng Của Sự Thanh Khiết</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Reset cơ bản */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background: linear-gradient(to bottom, #f9f9f9, #fef5f7);
+      color: #333;
+    }
+    header {
+      background: linear-gradient(to right, #f7c4e6, #e8a4d2);
+      text-align: center;
+      padding: 60px 20px 30px;
+    }
+    header h1 {
+      font-size: 2.8rem;
+      color: #6a2c6c;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #8e44ad;
+    }
+    /* Breadcrumb */
+    .breadcrumb {
+      margin: 20px auto;
+      text-align: center;
+      font-size: 1.5rem;
+    }
+    .breadcrumb a {
+      color: #6a2c6c;
+      text-decoration: none;
+    }
+    .breadcrumb a:hover {
+      text-decoration: underline;
+    }
+    /* Container sản phẩm */
+    .product-container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      justify-content: center;
+    }
+    /* Hình ảnh sản phẩm */
+    .product-image {
+      flex: 1 1 450px;
+      max-width: 500px;
+    }
+    .product-image img {
+      width: 100%;
+      border-radius: 16px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    }
+    /* Thông tin sản phẩm */
+    .product-details {
+      flex: 1 1 500px;
+    }
+    .product-details h2 {
+      font-size: 2rem;
+      color: #6a2c6c;
+      margin-bottom: 8px;
+    }
+    .product-details h3 {
+      font-size: 1rem;
+      font-style: italic;
+      color: #555;
+      margin-bottom: 12px;
+    }
+    .product-details p {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      margin-bottom: 16px;
+    }
+    /* Giá sản phẩm */
+    .price-section {
+      margin-bottom: 16px;
+    }
+    .discount-price {
+      color: #6a2c6c;
+      font-size: 1.6rem;
+      font-weight: bold;
+      animation: glow 2.5s ease-in-out infinite;
+      display: inline-block;
+    }
+    .old-price {
+      font-size: 1.2rem;
+      color: #999;
+      text-decoration: line-through;
+      margin-left: 10px;
+    }
+    /* Hiệu ứng glow cho giá khuyến mãi */
+    @keyframes glow {
+      0% { text-shadow: 0 0 5px #f7c4e6, 0 0 10px #6a2c6c; transform: scale(1); }
+      50% { text-shadow: 0 0 10px #f7c4e6, 0 0 20px #6a2c6c; transform: scale(1.05); }
+      100% { text-shadow: 0 0 5px #f7c4e6, 0 0 10px #6a2c6c; transform: scale(1); }
+    }
+    .promotion-note {
+      font-style: italic;
+      color: #8e44ad;
+      margin-top: 8px;
+      font-size: 0.95rem;
+    }
+    /* Hộp thông tin nổi bật */
+    .highlight {
+      background-color: #fef2f7;
+      padding: 14px;
+      border-left: 5px solid #f7c4e6;
+      border-radius: 8px;
+      margin: 20px 0;
+    }
+    .highlight ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+    /* Nút quay lại */
+    .back-link {
+      display: block;
+      text-align: center;
+      margin: 40px auto;
+      padding: 12px 28px;
+      background-color: #6a2c6c;
+      color: white;
+      text-decoration: none;
+      font-size: 1.1rem;
+      font-weight: bold;
+      border-radius: 8px;
+      width: fit-content;
+      transition: background-color 0.3s ease;
+    }
+    .back-link:hover {
+      background-color: #8e44ad;
+    }
+    /* Footer */
+    footer {
+      text-align: center;
+      background-color: #fef2f7;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #555;
+    }
+    /* Responsive */
+    @media (max-width: 768px) {
+      .product-container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .product-image,
+      .product-details {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🌸𝑩𝒍𝒐𝒔𝒔𝒐𝒎 – 𝑩𝒊ể𝒖 𝑻ượ𝒏𝒈 𝑪ủ𝒂 𝑺ự 𝑻𝒉𝒂𝒏𝒉 𝑲𝒉𝒊ế𝒕🌸</h1>
+    <p>Thiết kế nhẹ nhàng, như đóa hoa xuân bừng nở</p>
+  </header>
+  <nav class="breadcrumb">
+    <a href="../index.html">Trang Chủ</a> &gt;
+    <a href="../vongco.html">Vòng Cổ</a> &gt;
+    <span>Blossom Necklace</span>
+  </nav>
+
+  <div class="product-container">
+    <div class="product-image">
+      <img src="vongcoimages/vongco8.jpg" alt="Blossom Necklace">
+    </div>
+    <div class="product-details">
+      <h2>✨𝑩𝒍𝒐𝒔𝒔𝒐𝒎 𝑵𝒆𝒄𝒌𝒍𝒂𝒄𝒆✨</h2>
+      <h3>Sự Kết Hợp Hoàn Hảo</h3>
+      <div class="price-section">
+        <span class="discount-price">"Giá khuyến mãi: 40.000đ"</span>
+        <span class="old-price">"46.000đ"</span>
+      </div>
+      <p class="promotion-note">🌟 Ưu đãi đặc biệt – Đừng bỏ lỡ!</p>
+      <div class="highlight">
+        <strong>Đặc điểm nổi bật:</strong>
+        <ul>
+          <li>Đá mắt mèo: Huyền bí, thanh thoát.</li>
+          <li>Khóa thép không gỉ: Bền chắc và thời thượng.</li>
+        </ul>
+        <strong>Ý nghĩa:</strong>
+        <li>Mang đến vẻ đẹp thanh khiết và tự nhiên, như những đóa hoa nở rộ trong ánh nắng.</li>
+        <li>Được thiết kế với sự tỉ mỉ và tinh tế, là biểu tượng của sự thanh lịch và nữ tính.</li>
+      </ul>
+      </div>
+      <p>
+        “𝑩𝒍𝒐𝒔𝒔𝒐𝒎 𝑵𝒆𝒄𝒌𝒍𝒂𝒄𝒆” mang đến sự thanh lịch và vẻ đẹp tự nhiên, là lựa chọn tuyệt vời để làm quà tặng hoặc điểm nhấn trong bộ sưu tập trang sức của bạn.
+      </p>
+    </div>
+  </div>
+
+  <div style="text-align: center;">
+    <a href="../vongco.html" class="back-link">&larr; Quay lại danh sách vòng cổ</a>
+  </div>
+
+  <footer>
+    &copy; 2025 Blossom – Vẻ đẹp thanh khiết và tự nhiên ✨
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Stay with Fate - Vòng tay lấy cảm hứng từ phim Pluto</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Reset cơ bản */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background-color: #fff; /* Nền trắng */
+      color: #333;
+    }
+    header {
+      background: linear-gradient(to right, #5e63b6, #34344e);
+      text-align: center;
+      padding: 60px 20px 30px;
+    }
+    header h1 {
+      font-size: 2.8rem;
+      color: #d1d4ff;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #d3d3e2;
+    }
+    /* Breadcrumb */
+
+    .breadcrumb {
+      margin: 20px auto;
+      text-align: center;
+      font-size: 1.5rem;
+    }
+    .breadcrumb a {
+      color: #5e63b6;
+      text-decoration: none;
+    }
+    .breadcrumb a:hover {
+      text-decoration: underline;
+    }
+    /* Container sản phẩm */
+    .product-container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      justify-content: center;
+    }
+    /* Hình ảnh sản phẩm */
+    .product-image {
+      flex: 1 1 450px;
+      max-width: 500px;
+    }
+    .product-image img {
+      width: 100%;
+      border-radius: 16px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    }
+    /* Thông tin sản phẩm */
+    .product-details {
+      flex: 1 1 500px;
+    }
+    .product-details h2 {
+      font-size: 2rem;
+      color: #5e63b6;
+      margin-bottom: 8px;
+    }
+    .product-details h3 {
+      font-size: 1rem;
+      font-style: italic;
+      color: #555;
+      margin-bottom: 12px;
+    }
+    .product-details p {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      margin-bottom: 16px;
+    }
+    /* Giá sản phẩm */
+    .price-section {
+      margin-bottom: 16px;
+    }
+    .discount-price {
+      color: #5e63b6;
+      font-size: 1.6rem;
+      font-weight: bold;
+      animation: glow 2.5s ease-in-out infinite;
+      display: inline-block;
+    }
+    .old-price {
+      font-size: 1.2rem;
+      color: #999;
+      text-decoration: line-through;
+      margin-left: 10px;
+    }
+    /* Hiệu ứng glow cho giá khuyến mãi */
+    @keyframes glow {
+      0% { text-shadow: 0 0 5px #5e63b6, 0 0 10px #34344e; transform: scale(1); }
+      50% { text-shadow: 0 0 10px #5e63b6, 0 0 20px #34344e; transform: scale(1.05); }
+      100% { text-shadow: 0 0 5px #5e63b6, 0 0 10px #34344e; transform: scale(1); }
+    }
+    .promotion-note {
+      font-style: italic;
+      color: #34344e;
+      margin-top: 8px;
+      font-size: 0.95rem;
+    }
+    /* Hộp thông tin nổi bật */
+    .highlight {
+      background-color: #f1f1f1;
+      padding: 14px;
+      border-left: 5px solid #5e63b6;
+      border-radius: 8px;
+      margin: 20px 0;
+    }
+    .highlight ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+    /* Nút quay lại */
+    .back-link {
+      display: block;
+      text-align: center;
+      margin: 40px auto;
+      padding: 12px 28px;
+      background-color: #5e63b6;
+      color: white;
+      text-decoration: none;
+      font-size: 1.1rem;
+      font-weight: bold;
+      border-radius: 8px;
+      width: fit-content;
+      transition: background-color 0.3s ease;
+    }
+    .back-link:hover {
+      background-color: #34344e;
+    }
+    /* Footer */
+    footer {
+      text-align: center;
+      background-color: #f1f1f1;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #555;
+    }
+    /* Responsive */
+    @media (max-width: 768px) {
+      .product-container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .product-image,
+      .product-details {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🪐𝑺𝒕𝒂𝒚 𝒘𝒊𝒕𝒉 𝑭𝒂𝒕𝒆 - 𝑽ò𝒏𝒈 𝒕𝒂𝒚 𝒍ấ𝒚 𝒄ả𝒎 𝒉ứ𝒏𝒈 𝒕ừ 𝒑𝒉𝒊𝒎 𝑷𝒍𝒖𝒕𝒐🪐</h1>
+    <p>Vẻ đẹp huyền bí và mạnh mẽ vượt thời gian</p>
+  </header>
+  <nav class="breadcrumb">
+    <a href="../index.html">Trang Chủ</a> &gt;
+    <a href="../vongtay.html">Vòng Tay</a> &gt;
+    <span>Stay with Fate</span>
+  </nav>
+
+  <div class="product-container">
+    <div class="product-image">
+      <img src="vongtayimages/vongtay5.jpg" alt="Vòng tay Stay with Fate">
+    </div>
+    <div class="product-details">
+      <h2>💎𝑺𝒕𝒂𝒚 𝒘𝒊𝒕𝒉 𝑭𝒂𝒕𝒆💎</h2>
+      <h3>Lấy cảm hứng từ bộ phim Pluto</h3>
+      <div class="price-section">
+        <span class="discount-price">"Giá khuyến mãi: 40.000đ"</span>
+        <span class="old-price">"55.000đ"</span>
+      </div>
+      <p class="promotion-note">✨ Ưu đãi hấp dẫn – Đừng bỏ lỡ!</p>
+      <div class="highlight">
+        <strong>Chất liệu nổi bật:</strong>
+        <ul>
+          <li>Đá tự nhiên: Mang năng lượng tích cực, giúp bạn tự tin hơn.</li>
+          <li>Khoá thép không gỉ: Bền chắc, đại diện cho sự gắn kết lâu dài.</li>
+        </ul>
+
+        <strong>Ý nghĩa:</strong> Tượng trưng cho sự kết nối giữa con người và vũ trụ, giúp bạn vượt qua mọi thử thách trong cuộc sống.<br>
+      </div>
+      <p>
+        Với sự kết hợp hoàn hảo giữa yếu tố tự nhiên và sự tinh tế, chiếc vòng tay <strong>“𝑺𝒕𝒂𝒚 𝒘𝒊𝒕𝒉 𝑭𝒂𝒕𝒆”</strong> giúp bạn khám phá vẻ đẹp bí ẩn và sức mạnh vượt qua mọi thử thách trong cuộc sống.
+      </p>
+    </div>
+  </div>
+
+  <div style="text-align: center;">
+    <a href="../vongtay.html" class="back-link">&larr; Quay lại danh sách vòng tay</a>
+  </div>
+
+  <footer>
+    &copy; 2025 Stay with Fate - Mỗi chiếc vòng đều kể một câu chuyện 💜
+  </footer>
+
+</body>
+</html>

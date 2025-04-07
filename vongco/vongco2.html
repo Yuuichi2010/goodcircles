@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Pearly Necklace – Vòng Cổ Ngọc Trai</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Reset cơ bản */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background: linear-gradient(to bottom, #fff9e6, #fef5e1);
+      color: #333;
+    }
+    header {
+      background: linear-gradient(to right, #f39c12, #e67e22);
+      text-align: center;
+      padding: 60px 20px 30px;
+    }
+    header h1 {
+      font-size: 2.8rem;
+      color: #ffffff;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #ffeaa7;
+    }
+    /* Breadcrumb */
+    .breadcrumb {
+      margin: 20px auto;
+      text-align: center;
+      font-size: 1.5rem;
+    }
+    .breadcrumb a {
+      color: #f39c12;
+      text-decoration: none;
+    }
+    .breadcrumb a:hover {
+      text-decoration: underline;
+    }
+  
+    /* Container sản phẩm */
+    .product-container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      justify-content: center;
+    }
+    /* Hình ảnh sản phẩm */
+    .product-image {
+      flex: 1 1 450px;
+      max-width: 500px;
+    }
+    .product-image img {
+      width: 100%;
+      border-radius: 16px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    }
+    /* Thông tin sản phẩm */
+    .product-details {
+      flex: 1 1 500px;
+    }
+    .product-details h2 {
+      font-size: 2rem;
+      color: #34495e;
+      margin-bottom: 8px;
+    }
+    .product-details h3 {
+      font-size: 1rem;
+      font-style: italic;
+      color: #555;
+      margin-bottom: 12px;
+    }
+    .product-details p {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      margin-bottom: 16px;
+    }
+    /* Giá sản phẩm */
+    .price-section {
+      margin-bottom: 16px;
+    }
+    .discount-price {
+      color: #f39c12;
+      font-size: 1.6rem;
+      font-weight: bold;
+      animation: glow 2.5s ease-in-out infinite;
+      display: inline-block;
+    }
+    .old-price {
+      font-size: 1.2rem;
+      color: #999;
+      text-decoration: line-through;
+      margin-left: 10px;
+    }
+    /* Hiệu ứng glow cho giá khuyến mãi */
+    @keyframes glow {
+      0% { text-shadow: 0 0 5px #ffd966, 0 0 10px #f39c12; transform: scale(1); }
+      50% { text-shadow: 0 0 15px #ffd966, 0 0 30px #f39c12; transform: scale(1.05); }
+      100% { text-shadow: 0 0 5px #ffd966, 0 0 10px #f39c12; transform: scale(1); }
+    }
+    .promotion-note {
+      font-style: italic;
+      color: #d35400;
+      margin-top: 8px;
+      font-size: 0.95rem;
+    }
+    /* Hộp thông tin nổi bật */
+    .highlight {
+      background-color: #fff2e6;
+      padding: 14px;
+      border-left: 5px solid #f39c12;
+      border-radius: 8px;
+      margin: 20px 0;
+    }
+    .highlight ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+    /* Nút quay lại */
+    .back-link {
+      display: block;
+      text-align: center;
+      margin: 40px auto;
+      padding: 12px 28px;
+      background-color: #f39c12;
+      color: white;
+      text-decoration: none;
+      font-size: 1.1rem;
+      font-weight: bold;
+      border-radius: 8px;
+      width: fit-content;
+      transition: background-color 0.3s ease;
+    }
+    .back-link:hover {
+      background-color: #e67e22;
+    }
+    /* Footer */
+    footer {
+      text-align: center;
+      background-color: #fff2e6;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #555;
+    }
+    footer a {
+      color: #f39c12;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+    /* Responsive */
+    @media (max-width: 768px) {
+      .product-container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .product-image,
+      .product-details {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>✨𝑷𝒆𝒂𝒓𝒍𝒚 𝑵𝒆𝒄𝒌𝒍𝒂𝒄𝒆 – 𝑽ò𝒏𝒈 𝑪ổ 𝑵𝒈ọ𝒄 𝑻𝒓𝒂𝒊✨</h1>
+    <p>Vẻ đẹp thanh lịch và hiện đại dành riêng cho bạn</p>
+  </header>
+
+  <nav class="breadcrumb">
+    <a href="../index.html">Trang Chủ</a> &gt;
+    <a href="../vongco.html">Vòng Cổ</a> &gt;
+    <span>Pearly Necklace</span>
+  </nav>
+
+  <div class="product-container">
+    <div class="product-image">
+      <img src="vongcoimages/vongco2.jpg" alt="Pearly Necklace" loading="lazy">
+    </div>
+    <div class="product-details">
+      <h2>✨𝑷𝒆𝒂𝒓𝒍𝒚 𝑵𝒆𝒄𝒌𝒍𝒂𝒄𝒆✨</h2>
+      <h3>Ngọc Trai Và Sự Thanh Lịch</h3>
+      <div class="price-section">
+        <span class="discount-price">"Giá khuyến mãi: 45.000đ"</span>
+        <span class="old-price">"50.000đ"</span>
+      </div>
+      <p class="promotion-note">✨ Ưu đãi đặc biệt – Đừng bỏ lỡ cơ hội!</p>
+      <div class="highlight">
+        <strong>Chất liệu:</strong>
+        <ul>
+          <li>Ngọc trai nước ngọt: Sáng bóng và quý phái.</li>
+          <li>Charm thủy tinh: Lấp lánh, tạo điểm nhấn tinh tế.</li>
+        </ul>
+        <strong>
+          Đặc điểm nổi bật:</strong>
+        
+        <ul>
+          <li>
+            💎
+            Thiết kế thanh lịch, dễ dàng phối hợp với nhiều trang phục.</li>
+          <li>
+            💎
+            Màu sắc nhẹ nhàng, phù hợp với mọi lứa tuổi.</li>
+        </ul>
+<strong>Ý nghĩa:</strong> Tượng trưng cho sự thanh lịch và quý phái, giúp bạn tỏa sáng trong mọi khoảnh khắc.<br>
+      </div>
+      <p>
+        “𝑷𝒆𝒂𝒓𝒍𝒚 𝑵𝒆𝒄𝒌𝒍𝒂𝒄𝒆”là món quà hoàn hảo để tôn lên vẻ đẹp tự nhiên và phong cách của bạn, phù hợp cho các dịp đặc biệt.
+      </p>
+    </div>
+  </div>
+
+  <div style="text-align: center;">
+    <a href="../vongco.html" class="back-link" aria-label="Quay lại danh sách vòng cổ">&larr; Quay lại danh sách vòng cổ</a>
+  </div>
+
+  <footer>
+    &copy; 2025 Pearly Necklace – Đẳng cấp và phong cách thanh lịch ✨
+  </footer>
+
+</body>
+</html>

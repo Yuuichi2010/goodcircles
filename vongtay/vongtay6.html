@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Ocean Whisper & Fishy Tale – Bộ đôi vòng tay đại dương</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Reset cơ bản */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background-color: #fff; /* Nền trắng */
+      color: #333;
+    }
+    header {
+      background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+      text-align: center;
+      padding: 60px 20px 30px;
+    }
+    header h1 {
+      font-size: 2.8rem;
+      color: #034f84;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #555;
+    }
+    /* Breadcrumb */
+    .breadcrumb {
+      margin: 20px auto;
+      text-align: center;
+      font-size: 1.5rem;
+    }
+
+    .breadcrumb a {
+      color: #034f84;
+      text-decoration: none;
+    }
+    .breadcrumb a:hover {
+      text-decoration: underline;
+    }
+
+    /* Container sản phẩm */
+    .product-section {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      justify-content: center;
+    }
+    .product {
+      background-color: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      max-width: 500px;
+      flex: 1 1 400px;
+      display: flex;
+      flex-direction: column;
+    }
+    .product img {
+      width: 100%;
+      aspect-ratio: 1/1;
+      object-fit: cover;
+    }
+    .product-content {
+      padding: 24px;
+    }
+    .product-content h2 {
+      font-size: 1.8rem;
+      color: #026873;
+      margin-bottom: 8px;
+    }
+    .product-content h3 {
+      font-size: 1rem;
+      font-style: italic;
+      color: #555;
+      margin-bottom: 12px;
+    }
+    .product-content p {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 16px;
+    }
+    /* Giá sản phẩm */
+    .price-section {
+      margin-bottom: 16px;
+    }
+    .discount-price {
+      color: #0077b6;
+      font-size: 1.6rem;
+      font-weight: bold;
+      animation: glow 2.5s ease-in-out infinite;
+      display: inline-block;
+    }
+    .old-price {
+      font-size: 1.2rem;
+      color: #999;
+      text-decoration: line-through;
+      margin-left: 10px;
+    }
+    /* Hiệu ứng glow cho giá khuyến mãi */
+    @keyframes glow {
+      0% { text-shadow: 0 0 5px #81d4fa, 0 0 10px #0077b6; transform: scale(1); }
+      50% { text-shadow: 0 0 10px #81d4fa, 0 0 20px #0077b6; transform: scale(1.05); }
+      100% { text-shadow: 0 0 5px #81d4fa, 0 0 10px #0077b6; transform: scale(1); }
+    }
+    .promotion-note {
+      font-style: italic;
+      color: #026873;
+      margin-top: 8px;
+      font-size: 0.95rem;
+    }
+    /* Footer */
+    footer {
+      text-align: center;
+      background-color: #f1f1f1; /* Nền xám nhạt */
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #555;
+      margin-top: 60px;
+    }
+    .back-link {
+      display: block;
+      text-align: center;
+      margin: 40px auto;
+      padding: 12px 28px;
+      background-color: #034f84;
+      color: white;
+      text-decoration: none;
+      font-size: 1.1rem;
+      font-weight: bold;
+      border-radius: 8px;
+      width: fit-content;
+      transition: background-color 0.3s ease;
+    }
+    .back-link:hover {
+      background-color: #023e66;
+    }
+
+    @media (max-width: 768px) {
+      .product-section {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🌊𝑶𝒄𝒆𝒂𝒏 𝑾𝒉𝒊𝒔𝒑𝒆𝒓 & 𝑭𝒊𝒔𝒉𝒚 𝑻𝒂𝒍𝒆 – 𝑩ộ đô𝒊 𝒗ò𝒏𝒈 𝒕𝒂𝒚 đạ𝒊 𝒅ươ𝒏𝒈🐠</h1>
+    <p>Nhẹ nhàng, tươi mới, mang hơi thở mùa hè</p>
+  </header>
+  <nav class="breadcrumb">
+    <a href="../index.html">Trang Chủ</a> &gt;
+    <a href="../vongtay.html">Vòng Tay</a> &gt;
+    <span>Ocean Whisper & Fishy Tale</span>
+  </nav>
+
+  <section class="product-section">
+    <!-- Ocean Whisper -->
+    <div class="product">
+      <img src="vongtayimages/vongtay6.jpg" alt="Vòng tay Ocean Whisper">
+      <div class="product-content">
+        <h2>🌊𝑶𝒄𝒆𝒂𝒏 𝑾𝒉𝒊𝒔𝒑𝒆𝒓🌊</h2>
+        <h3>Thư thái, nhẹ nhàng với vẻ đẹp của đại dương</h3>
+        <p>
+          Khám phá vẻ đẹp yên bình của đại dương qua <strong>“𝑶𝒄𝒆𝒂𝒏 𝑾𝒉𝒊𝒔𝒑𝒆𝒓”</strong> – vòng tay với charm hình vỏ sò tinh tế.
+          Tựa như làn sóng nhẹ nhàng lướt qua tâm trí, thiết kế này đem lại cảm giác thư giãn và thanh thản.
+        </p>
+        <div class="price-section">
+          <span class="discount-price">"Giá khuyến mãi: 40.000đ"</span>
+          <span class="old-price">"50.000đ"</span>
+        </div>
+        <p class="promotion-note">🎉 Ưu đãi đặc biệt – Số lượng có hạn!</p>
+      </div>
+    </div>
+    <!-- Fishy Tale -->
+    <div class="product">
+      <img src="vongtayimages/vongtay6.jpg" alt="Vòng tay Fishy Tale">
+      <div class="product-content">
+        <h2>🐟𝑭𝒊𝒔𝒉𝒚 𝑻𝒂𝒍𝒆🐟</h2>
+        <h3>Tươi mới, rực rỡ cho tâm hồn trẻ trung</h3>
+        <p>
+          <strong>“𝑭𝒊𝒔𝒉𝒚 𝑻𝒂𝒍𝒆”</strong> là lựa chọn tuyệt vời cho những tâm hồn trẻ trung, năng động.
+          Với charm hình cá đáng yêu, chiếc vòng tay này mang lại nét tươi mới, đầy màu sắc cho mùa hè rực rỡ.
+        </p>
+        <div class="price-section">
+          <span class="discount-price">"Giá khuyến mãi: 40.000đ"</span>
+          <span class="old-price">"50.000đ"</span>
+        </div>
+        <p class="promotion-note">✨ Ưu đãi hấp dẫn – Đừng bỏ lỡ!</p>
+      </div>
+    </div>
+  </section>
+
+  <div style="text-align: center;">
+    <a href="../vongtay.html" class="back-link">&larr; Quay lại danh sách vòng tay</a>
+  </div>
+
+  <footer>
+    &copy; 2025 Bộ sưu tập Vòng Tay Mùa Hè – Mỗi thiết kế đều mang một câu chuyện riêng 💙
+  </footer>
+
+</body>
+</html>

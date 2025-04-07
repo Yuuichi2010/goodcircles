@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Ocean Fish – Vòng tay handmade</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Reset cơ bản */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background: linear-gradient(to bottom, #f0fafd, #e8f0ff);
+      color: #333;
+    }
+    header {
+      background: linear-gradient(to right, #a2d2ff, #bde0fe);
+      text-align: center;
+      padding: 60px 20px 30px;
+    }
+    header h1 {
+      font-size: 2.8rem;
+      color: #0077b6;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #555;
+    }
+    /* Breadcrumb */
+    .breadcrumb {
+      margin: 20px auto;
+      text-align: center;
+      font-size: 1.5rem;
+    }
+    .breadcrumb a {
+      color: #0077b6;
+      text-decoration: none;
+    }
+    .breadcrumb a:hover {
+      text-decoration: underline;
+    }
+    /* Container sản phẩm */
+    .product-container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      justify-content: center;
+    }
+    /* Hình ảnh sản phẩm */
+    .product-image {
+      flex: 1 1 450px;
+      max-width: 500px;
+    }
+    .product-image img {
+      width: 100%;
+      border-radius: 16px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    }
+    /* Thông tin sản phẩm */
+    .product-details {
+      flex: 1 1 500px;
+    }
+    .product-details h2 {
+      font-size: 2rem;
+      color: #005f73;
+      margin-bottom: 8px;
+    }
+    .product-details h3 {
+      font-size: 1rem;
+      font-style: italic;
+      color: #555;
+      margin-bottom: 12px;
+    }
+    .product-details p {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      margin-bottom: 16px;
+    }
+    /* Giá sản phẩm */
+    .price-section {
+      margin-bottom: 16px;
+    }
+    .discount-price {
+      color: #005f73;
+      font-size: 1.6rem;
+      font-weight: bold;
+      animation: glow 2.5s ease-in-out infinite;
+      display: inline-block;
+    }
+    .old-price {
+      font-size: 1.2rem;
+      color: #999;
+      text-decoration: line-through;
+      margin-left: 10px;
+    }
+    /* Hiệu ứng glow cho giá khuyến mãi */
+    @keyframes glow {
+      0% { text-shadow: 0 0 5px #81d4fa, 0 0 10px #0077b6; transform: scale(1); }
+      50% { text-shadow: 0 0 10px #81d4fa, 0 0 20px #0077b6; transform: scale(1.05); }
+      100% { text-shadow: 0 0 5px #81d4fa, 0 0 10px #0077b6; transform: scale(1); }
+    }
+    .promotion-note {
+      font-style: italic;
+      color: #0077b6;
+      margin-top: 8px;
+      font-size: 0.95rem;
+    }
+    /* Hộp thông tin nổi bật */
+    .highlight {
+      background-color: #d0f0ff;
+      padding: 14px;
+      border-left: 5px solid #0077b6;
+      border-radius: 8px;
+      margin: 20px 0;
+    }
+    .highlight ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+    /* Nút quay lại */
+    .back-link {
+      display: block;
+      text-align: center;
+      margin: 40px auto;
+      padding: 12px 28px;
+      background-color: #0077b6;
+      color: white;
+      text-decoration: none;
+      font-size: 1.1rem;
+      font-weight: bold;
+      border-radius: 8px;
+      width: fit-content;
+      transition: background-color 0.3s ease;
+    }
+    .back-link:hover {
+      background-color: #005f8a;
+    }
+    /* Footer */
+    footer {
+      text-align: center;
+      background-color: #e6f9ff;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #555;
+    }
+    /* Responsive */
+    @media (max-width: 768px) {
+      .product-container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .product-image,
+      .product-details {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🌊𝑶𝒄𝒆𝒂𝒏 𝑭𝒊𝒔𝒉 – 𝑽ò𝒏𝒈 𝒕𝒂𝒚 𝒉𝒂𝒏𝒅𝒎𝒂𝒅𝒆🐟</h1>
+    <p>Sự tự do của đại dương trong lòng bạn</p>
+  </header>
+  <nav class="breadcrumb">
+    <a href="../index.html">Trang Chủ</a> &gt;
+    <a href="../vongtay.html">Vòng Tay</a> &gt;
+    <span>Ocean Fish</span>
+  </nav>
+
+  <div class="product-container">
+    <div class="product-image">
+      <img src="vongtayimages/vongtay2.jpg" alt="Vòng tay Ocean Fish">
+    </div>
+    <div class="product-details">
+      <h2>🐟𝑶𝒄𝒆𝒂𝒏 𝑭𝒊𝒔𝒉🐟</h2>
+      <h3>Vẻ đẹp tự do và phong cách</h3>
+      <div class="price-section">
+        <span class="discount-price">"Giá khuyến mãi: 45.000đ"</span>
+        <span class="old-price">"50.000đ"</span>
+      </div>
+      <p class="promotion-note">🎉 Ưu đãi đặc biệt – Hãy đặt mua ngay!</p>
+      <div class="highlight">
+        <strong>Thông tin nổi bật:</strong>
+        <ul>
+          <li>🐟 Charm hình cá: Tượng trưng cho sự tự do và uyển chuyển.</li>
+          <li>🌊 Cảm hứng từ đại dương: Một vẻ đẹp tự nhiên, gần gũi.</li>
+        </ul>
+        <strong>Ý nghĩa:</strong> Tượng trưng cho sự tự do, thanh thoát và phong cách riêng biệt.<br>
+      </div>
+      <p>
+        Chiếc vòng tay <strong>“𝑶𝒄𝒆𝒂𝒏 𝑭𝒊𝒔𝒉”</strong> được thiết kế tinh tế, lấy cảm hứng từ đại dương bao la, mang lại vẻ đẹp nhẹ nhàng, tự do và sang trọng cho người đeo.
+      </p>
+    </div>
+  </div>
+
+  <div style="text-align: center;">
+    <a href="../vongtay.html" class="back-link">&larr; Quay lại danh sách vòng tay</a>
+  </div>
+
+  <footer>
+    &copy; 2025 Ocean Fish – Phong cách đại dương ✨
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Black & White Duo – Sự đối lập hoàn hảo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Reset cơ bản */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background: linear-gradient(to bottom, #ffffff, #f7f7f7);
+      color: #333;
+    }
+    header {
+      background: linear-gradient(to right, #000000, #3a3a3a);
+      text-align: center;
+      padding: 60px 20px 30px;
+    }
+    header h1 {
+      font-size: 2.8rem;
+      color: #ffffff;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #bdc3c7;
+    }
+    /* Breadcrumb */
+    .breadcrumb {
+      margin: 20px auto;
+      text-align: center;
+      font-size: 1.5rem;
+    }
+    .breadcrumb a {
+      color: #000000;
+      text-decoration: none;
+    }
+    .breadcrumb a:hover {
+      text-decoration: underline;
+    }
+    /* Container sản phẩm */
+    .product-container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      justify-content: center;
+    }
+    /* Hình ảnh sản phẩm */
+    .product-image {
+      flex: 1 1 450px;
+      max-width: 500px;
+    }
+    .product-image img {
+      width: 100%;
+      border-radius: 16px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    }
+    /* Thông tin sản phẩm */
+    .product-details {
+      flex: 1 1 500px;
+    }
+    .product-details h2 {
+      font-size: 2rem;
+      color: #2c3e50;
+      margin-bottom: 8px;
+    }
+    .product-details h3 {
+      font-size: 1rem;
+      font-style: italic;
+      color: #555;
+      margin-bottom: 12px;
+    }
+    .product-details p {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      margin-bottom: 16px;
+    }
+    /* Giá sản phẩm */
+    .price-section {
+      margin-bottom: 16px;
+    }
+    .discount-price {
+      color: #000000;
+      font-size: 1.6rem;
+      font-weight: bold;
+      animation: glow 2.5s ease-in-out infinite;
+      display: inline-block;
+    }
+    .old-price {
+      font-size: 1.2rem;
+      color: #999;
+      text-decoration: line-through;
+      margin-left: 10px;
+    }
+    /* Hiệu ứng glow cho giá khuyến mãi */
+    @keyframes glow {
+      0% { text-shadow: 0 0 5px #ffffff, 0 0 10px #000000; transform: scale(1); }
+      50% { text-shadow: 0 0 10px #ffffff, 0 0 20px #000000; transform: scale(1.05); }
+      100% { text-shadow: 0 0 5px #ffffff, 0 0 10px #000000; transform: scale(1); }
+    }
+    .promotion-note {
+      font-style: italic;
+      color: #2c3e50;
+      margin-top: 8px;
+      font-size: 0.95rem;
+    }
+    /* Hộp thông tin nổi bật */
+    .highlight {
+      background-color: #f7f7f7;
+      padding: 14px;
+      border-left: 5px solid #000000;
+      border-radius: 8px;
+      margin: 20px 0;
+    }
+    .highlight ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+    /* Nút quay lại */
+    .back-link {
+      display: block;
+      text-align: center;
+      margin: 40px auto;
+      padding: 12px 28px;
+      background-color: #000000;
+      color: white;
+      text-decoration: none;
+      font-size: 1.1rem;
+      font-weight: bold;
+      border-radius: 8px;
+      width: fit-content;
+      transition: background-color 0.3s ease;
+    }
+    .back-link:hover {
+      background-color: #3a3a3a;
+    }
+    /* Footer */
+    footer {
+      text-align: center;
+      background-color: #f7f7f7;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #888;
+    }
+    /* Responsive */
+    @media (max-width: 768px) {
+      .product-container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .product-image,
+      .product-details {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>💫𝑩𝒍𝒂𝒄𝒌 & 𝑾𝒉𝒊𝒕𝒆 𝑫𝒖𝒐 – 𝑺ự đố𝒊 𝒍ậ𝒑 𝒉𝒐à𝒏 𝒉ả𝒐🤍</h1>
+    <p>Khám phá vẻ đẹp đối lập giữa mạnh mẽ và thanh thoát.</p>
+  </header>
+  <nav class="breadcrumb">
+    <a href="../index.html">Trang Chủ</a> &gt;
+    <a href="../vongtay.html">Vòng Tay</a> &gt;
+    <span>Black & White Duo</span>
+  </nav>
+
+  <div class="product-container">
+    <div class="product-image">
+      <img src="vongtayimages/vongtay14.jpg" alt="Black & White Duo Bracelet">
+    </div>
+    <div class="product-details">
+      <h2>✨𝑩𝒍𝒂𝒄𝒌 & 𝑾𝒉𝒊𝒕𝒆 𝑫𝒖𝒐✨</h2>
+      <h3>Sự tinh tế giữa đen và trắng</h3>
+      <div class="price-section">
+        <span class="discount-price">"Giá khuyến mãi: 40.000đ"</span>
+        <span class="old-price">"50.000đ"</span>
+      </div>
+      <p class="promotion-note">✨ Ưu đãi đặc biệt – Số lượng giới hạn!</p>
+      <div class="highlight">
+        <strong>Ý nghĩa màu sắc:</strong>
+        <ul>
+          <li>🖤 Đen: Biểu tượng cho sự bí ẩn, mạnh mẽ và quyền lực.</li>
+          <li>🤍 Trắng: Mang đến cảm giác thanh thoát, bình yên và thuần khiết.</li>
+        </ul>
+
+        <strong>
+          Chất liệu nổi bật:</strong>
+        <ul>
+          <li>
+            💎
+            Hạt đá tự nhiên: Tạo nên vẻ đẹp tự nhiên và độc đáo.</li>
+          <li>
+            🔗
+            Charm hợp kim kẽm: Không gỉ, chắc chắn và bền bỉ.</li>
+          
+          <li>
+            
+          🌟
+            Móc nối hợp kim kẽm: Chắc chắn, không gỉ.</li>
+          <li>
+            💍
+            Khóa thép không gỉ: Bền, chống ăn mòn.</li>
+          
+          </ul>
+      </div>
+      <p>
+        Chiếc vòng tay <strong>“𝑩𝒍𝒂𝒄𝒌 & 𝑾𝒉𝒊𝒕𝒆 𝑫𝒖𝒐”</strong> là sự kết hợp hoàn hảo giữa màu sắc của sự đối lập: màu đen bí ẩn và mạnh mẽ, cùng màu trắng thanh thoát và thuần khiết. Khi hòa quyện, chúng tạo nên vẻ đẹp tinh tế và đầy sức hút.
+      </p>
+    </div>
+  </div>
+
+  <div style="text-align: center;">
+    <a href="../vongtay.html" class="back-link">&larr; Quay lại danh sách vòng tay</a>
+  </div>>
+
+  <footer>
+    &copy; 2025 Black & White Duo – Vẻ đẹp hài hòa và đẳng cấp ✨
+  </footer>
+
+</body>
+</html>
